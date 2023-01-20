@@ -87,5 +87,8 @@ object CreateCaseClass extends  TypedSparkScriptIncremental[DocumentConfig[IcijI
     
     val destinationPath = projectConfig.caseClassPath 
     
-    
+    val bestSubsequenceSum(sequence : List[Int]) : Int 
+    = sequence.reduce(
+      (a, b) => Math.max(a, a + b) 
+    ) 
 }
